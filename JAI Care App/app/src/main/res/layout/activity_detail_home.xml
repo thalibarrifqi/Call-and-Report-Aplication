@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ekybintarnow.bottomnavigationview.DetailHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updId"
+            android:visibility="gone"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conveyor" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updConveyor"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kerusakan" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updKerusakan"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keterangan" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updKeterangan"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:focusable="false"
+            android:cursorVisible="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updStatus"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updStartDate"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waktu_datang" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:id="@+id/updScanDate"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teknisi_yang_datang" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updValidasiTeknisi"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waktu_selesai" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updKonfirmasiDate"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_konfirmasi" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updKonfirmasiTeknisi"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/teknisi"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updTeknisi"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qrcode"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewQrcode"
+            android:focusable="false"
+            android:cursorVisible="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hasil_qrcode"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updQrcode"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teknisi_yang_konfirmasi"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewTeknisi"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor"
+            android:cursorVisible="false"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_click_date"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:text="@string/scan_barcode"
+            android:background="@drawable/capsule_tombol"
+            android:id="@+id/buttonScanner"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/capsule_tombol"
+            android:text="@string/konfirmasi"
+            android:id="@+id/buttonUpdate" />
+    </LinearLayout>
+
+</ScrollView>
